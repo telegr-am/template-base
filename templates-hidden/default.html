@@ -71,23 +71,31 @@
 
 
 <div class="container">
-    <div class="content">
-	   <div class="row"  id="main_content_row">
-		<div id="left_side">
-        <div id="content">Content goes here</div>
-		</div>
-	   </div>
+    <div class="content" data-lift="move_top?from=left_side&to=page_header>
+        <div class="page-header" id="page_header">
+	  <!-- if you've got a header, put it here -->
+        </div>
+        <div id="main_content_place">
+            <div id="left_side">
+                <div id="content">Content goes here</div>
+            </div>
+	    <div id="right_side">
+	      <!-- blank... but we can layout stuff here -->
+	    </div>
+        </div>
     </div>
 
     <footer style="text-align: center">
         Powered by <a href="https://telegr.am">Telegram</a> Simply Beautiful Content Management
     </footer>
-    
+
 
 </div>
 <!-- /container -->
 
-    <div id="telegram_include_me_div" style="display: none"> <div data-lift="embed?what=/templates-hidden/include"></div> </div>
+<div id="telegram_include_me_div" style="display: none">
+    <div data-lift="embed?what=/templates-hidden/include"></div>
+</div>
 
 <!--scripts-->
 

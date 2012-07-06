@@ -72,25 +72,32 @@
 
 <div class="container">
     <div class="content">
-	    <div class="page-header">
-		<h1><span data-lift="page-info?name=title">title</span> <small data-lift="page-info?name=date">2012/01/01</small></h1>
-		</div>  
-		<div class="row" id="main_content_row">
-			<div id="left_side">
-        <div id="content">Content goes here</div>
-	</div>
-   </div>
+        <div class="page-header">
+            <h1><span data-lift="page-info?name=title">title</span>
+                <small data-lift="page-info?name=date">2012/01/01</small>
+            </h1>
+        </div>
+        <div id="main_content_place">
+            <div id="left_side">
+                <div id="content">Content goes here</div>
+            </div>
+	    <div id="right_side">
+	      <!-- blank... but we can layout stuff here -->
+	    </div>
+        </div>
     </div>
 
     <footer style="text-align: center">
         Powered by <a href="https://telegr.am">Telegram</a> Simply Beautiful Content Management
     </footer>
-    
+
 
 </div>
 <!-- /container -->
 
-    <div id="telegram_include_me_div" style="display: none"> <div data-lift="embed?what=/templates-hidden/include"></div> </div>
+<div id="telegram_include_me_div" style="display: none">
+    <div data-lift="embed?what=/templates-hidden/include"></div>
+</div>
 
 <!--scripts-->
 
